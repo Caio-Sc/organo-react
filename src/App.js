@@ -4,6 +4,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulatrio";
 import Time from "./componentes/Time";
 import Rodape from "./componentes/Rodape";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [colaboradores, setColaboradores] = useState([]);
