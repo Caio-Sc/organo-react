@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    background-color: #6278F7;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 100%; */
+    padding: 0 5rem;
+}
+
+#gitlogo{
+    max-width: 2rem;
+}
+
+.footer img {
+    max-width: 5rem;
+}

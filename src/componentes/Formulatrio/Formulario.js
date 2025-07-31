@@ -8,16 +8,7 @@ export const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
-  const [time, setTime] = useState("Programação");
-
-  const times = [
-    "Programação",
-    "Front-End",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
+  const [time, setTime] = useState("");
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
@@ -27,6 +18,10 @@ export const Formulario = (props) => {
       imagem,
       time,
     });
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
   };
 
   return (
@@ -57,7 +52,7 @@ export const Formulario = (props) => {
           valor={time}
           aoAlterado={(valor) => setTime(valor)}
           obrigatorio={true}
-          itens={times}
+          itens={props.times}
           label="Time"
         />
         <Botao>Criar card</Botao>
