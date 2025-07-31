@@ -4,7 +4,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulatrio";
 import Time from "./componentes/Time";
 import Rodape from "./componentes/Rodape";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [colaboradores, setColaboradores] = useState([]);
@@ -53,9 +53,10 @@ function App() {
 
   return (
     <div className="App">
+      <SpeedInsights />
       <Banner />
       <Formulario
-        times={times.map(time => time.nome)}
+        times={times.map((time) => time.nome)}
         aoColaboradorCadastrado={(colaborador) =>
           aoNovoColaboradorAdicionado(colaborador)
         }
@@ -66,11 +67,12 @@ function App() {
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome
+          colaboradores={colaboradores.filter(
+            (colaborador) => colaborador.time === time.nome
           )}
         />
       ))}
-    <Rodape/>
+      <Rodape />
     </div>
   );
 }
