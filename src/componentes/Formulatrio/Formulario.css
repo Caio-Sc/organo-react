@@ -1,0 +1,25 @@
+.dados-form{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    
+}
+
+.dados-form form{
+    background-color: #F6F6F6;
+    text-align: left;
+    max-width: 80%;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.dados-form h2{
+    color: #212121;
+    font-family: Prata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
